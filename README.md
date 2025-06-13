@@ -1,2 +1,2 @@
 # replit-keepalive
-keep runing discord bot
+keep runing discord bot for GTA5 RP
