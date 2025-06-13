@@ -1,0 +1,15 @@
+name: Keep Replit Alive
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Каждые 5 минут
+  workflow_dispatch:
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Replit Project
+        run: |
+          curl -s https://replit.com/@fromkamen/VZPStatsBot  > /dev/null
+          echo "Ping отправлен"
